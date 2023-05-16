@@ -1,7 +1,7 @@
 .cabecalho{
 	text-align:center;
 	font-family: Helvetica;
-    color: lightskyblue;
+    color:#87CEFA;
     -webkit-text-fill-color: #0A3871;
 	position:fixed;
 	top:0;
@@ -26,7 +26,7 @@
 .digiteMensagem{
 	font-family:Helvetica;
 	font-size:20px;
-	color:steelblue;
+	color:#4682B4;
 	position:relative;
 	margin-top:0;
 	padding-top:5px;
@@ -39,12 +39,12 @@
 	border-radius:25px;
 	font-size:18px;
 	text-align:center;
-	border-color:steelblue;
-	background-color:lightcyan;
+	border-color:#4682B4;
+	background-color:#E0FFFF;
 }
 .exclamation{
 	font-size:12px;
-	color:steelblue;
+	color:#4682B4;
 	text-align:justified;
 	padding-top:0%;
 }
@@ -54,7 +54,7 @@
 	padding-top:25px;
 	font-family:Helvetica;
 	font-size:14px;
-	color:steelblue;
+	color:#4682B4;
 	
 
 
@@ -67,8 +67,8 @@
 	border-radius:25px;
 	font-size:14px;
 	text-align:center;
-	border-color:steelblue;
-	background-color:aliceblue;
+	border-color:#4682B4;
+	background-color:#F0F8FF;
 }
 .botaoColar{
 	width:20%;
@@ -81,7 +81,7 @@
 	cursor: pointer;
 	background-color:#DEDFE8;
 	border-color:#0A3871;
-	color:steelblue;
+	color:#4682B4;
 }
 .botoesEsquerda{
 	width:45%;
@@ -123,7 +123,7 @@
 .mostraResultado{
 	font-family:Helvetica;
 	font-size:18px;
-	color:steelblue;
+	color:#4682B4;
 	position:relative;
 	margin-top:0;
 	padding-top:5px;
@@ -137,11 +137,11 @@
 	height:180px;
 	border:1px solid #888;
 	border-radius:25px;
-	border-color:steelblue;
+	border-color:#4682B4;
 	text-align:center;
 	font-size:16px;
-	color:lightskyblue;
-	background-color:lightcyan;
+	color:#87CEFA;
+	background-color:#E0FFFF;
 }
 .botoesDireita{
 	width:20%;
@@ -156,7 +156,7 @@
 	cursor: pointer;
 	background-color:#DEDFE8;
 	border-color:#0A3871;
-	color:steelblue;
+	color:#4682B4;
 }
 .botoesDireitaExterno{
     width:20%;
@@ -168,9 +168,9 @@
 	font-style:#0A3871;
 	transition: 1s all;
 	cursor: pointer;
-	background-color:aliceblue;
+	background-color:#F0F8FF;
 	border-color:#0A3871;
-	color:steelblue;
+	color:#4682B4;
 }
 .resultadoExternoCriptografado{
 	position:relative;
@@ -179,7 +179,7 @@
 	padding-bottom:0;
 	font-family:Helvetica;
 	font-size:14px;
-	color:steelblue;
+	color:#4682B4;
 }
 .entraResultadoExterno{
 	font-family: Helvetica;
@@ -189,11 +189,11 @@
 	height:40px;
 	border:1px solid #888;
 	border-radius:25px;
-	border-color:steelblue;
+	border-color:#4682B4;
 	text-align:center;
 	font-size:14px;
-	color:lightskyblue;
-	background-color:aliceblue;
+	color:#87CEFA;
+	background-color:#F0F8FF;
 }
 .rodape{
 	position:fixed;
@@ -201,7 +201,7 @@
 	bottom:0;
 	height:8%;
 	width:100%;
-	background-color:lightcyan;
+	background-color:#E0FFFF;
 	font-family:Helvetica;
 	font-size:11px;
 	color:#0A3871;
