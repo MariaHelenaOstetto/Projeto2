@@ -1,0 +1,209 @@
+.cabecalho{
+	text-align:center;
+	font-family: Helvetica;
+    color: lightskyblue;
+    -webkit-text-fill-color: #0A3871;
+	position:fixed;
+	top:0;
+	padding:10px;
+	width:100%;
+	height:20%;
+	background-image:url(gifGato1.gif); 
+}
+.linha{
+	display:flex;
+	flex-flow:row wrap;
+	padding:5px;
+}
+.coluna-50{
+	width:50%;
+	padding-top:10%;
+}
+.elementosEsquerda{
+	text-align:center;
+
+}
+.digiteMensagem{
+	font-family:Helvetica;
+	font-size:20px;
+	color:steelblue;
+	position:relative;
+	margin-top:0;
+	padding-top:5px;
+}
+.entraTexto{
+	position:relative;
+	margin-top:0;
+	width:90%;
+	height:110px;
+	border-radius:25px;
+	font-size:18px;
+	text-align:center;
+	border-color:steelblue;
+	background-color:lightcyan;
+}
+.exclamation{
+	font-size:12px;
+	color:steelblue;
+	text-align:justified;
+	padding-top:0%;
+}
+.externoCriptografado{
+	position:relative;
+	margin-top:0;
+	padding-top:25px;
+	font-family:Helvetica;
+	font-size:14px;
+	color:steelblue;
+	
+
+
+}
+.entraTextoExterno{
+	position:relative;
+	margin-top:5px;
+	width:90%;
+	height:30px;
+	border-radius:25px;
+	font-size:14px;
+	text-align:center;
+	border-color:steelblue;
+	background-color:aliceblue;
+}
+.botaoColar{
+	width:20%;
+	margin-right:70%;
+	text-align:center;
+	border-color:#0A3871;
+	border-radius:25px;
+	font-style:#0A3871;
+	transition: 1s all;
+	cursor: pointer;
+	background-color:#DEDFE8;
+	border-color:#0A3871;
+	color:steelblue;
+}
+.botoesEsquerda{
+	width:45%;
+	height:55px;
+	margin-top:0;
+	text-align:center;
+	border-radius:25px;
+	background-color:#0A3871;
+	border-color:#0A3871;
+	color:#FFFFFF;
+	font-size:16px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.botaoEsquerdaExterno{
+	width:35%;
+	height:55px;
+	margin-top:0;
+	text-align:center;
+	border-radius:25px;
+	background-color:#DEDFE8;
+	border-color:#0A3871;
+	color:#0A3871;
+	font-size:14px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.botoesEsquerda:hover{
+	transform: scale(1.1);
+}
+.botaoEsquerdaExterno:hover{
+	transform: scale(1.1);
+}
+.elementosDireita{
+	padding-left:20px;
+	text-align:center;
+}
+.mostraResultado{
+	font-family:Helvetica;
+	font-size:18px;
+	color:steelblue;
+	position:relative;
+	margin-top:0;
+	padding-top:5px;
+	padding-bottom:0;
+}
+.entraResultado{
+	font-family: Helvetica;
+	position:relative;
+	margin-top:0;
+	width:90%;
+	height:180px;
+	border:1px solid #888;
+	border-radius:25px;
+	border-color:steelblue;
+	text-align:center;
+	font-size:16px;
+	color:lightskyblue;
+	background-color:lightcyan;
+}
+.botoesDireita{
+	width:20%;
+	margin-top:5px;
+	margin-left:40px;
+	margin-bottom:20px;
+	text-align:center;
+	border-color:#0A3871;
+	border-radius:25px;
+	font-style:#0A3871;
+	transition: 1s all;
+	cursor: pointer;
+	background-color:#DEDFE8;
+	border-color:#0A3871;
+	color:steelblue;
+}
+.botoesDireitaExterno{
+    width:20%;
+	margin-top:5px;
+	margin-left:40px;
+	text-align:center;
+	border-color:#DEDFE8;
+	border-radius:25px;
+	font-style:#0A3871;
+	transition: 1s all;
+	cursor: pointer;
+	background-color:aliceblue;
+	border-color:#0A3871;
+	color:steelblue;
+}
+.resultadoExternoCriptografado{
+	position:relative;
+	margin-top:5%;
+	padding-top:5px;
+	padding-bottom:0;
+	font-family:Helvetica;
+	font-size:14px;
+	color:steelblue;
+}
+.entraResultadoExterno{
+	font-family: Helvetica;
+	position:relative;
+	margin-top:0;
+	width:90%;
+	height:40px;
+	border:1px solid #888;
+	border-radius:25px;
+	border-color:steelblue;
+	text-align:center;
+	font-size:14px;
+	color:lightskyblue;
+	background-color:aliceblue;
+}
+.rodape{
+	position:fixed;
+	padding-top:0;
+	bottom:0;
+	height:8%;
+	width:100%;
+	background-color:lightcyan;
+	font-family:Helvetica;
+	font-size:11px;
+	color:#0A3871;
+	text-align:center;
+}

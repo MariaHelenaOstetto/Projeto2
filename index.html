@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo: Criptografar e Descriptografar Mensagens</title>
+    <link href="StyleHome.css" rel="stylesheet">
+</head>
+<header>
+    <div class="cabecalho">
+    <h1 class="tituloCabecalho">Jogo: Criptografar e Descriptografar Mensagens</h1>
+    <p><n>Este é um jogo criado para codificar frases substituindo as vogais por outras palavras. Por exemplo, se codificar a palavra "gato" terá como resultado codificado a palavra "gaitober".</n></p>
+    </div>
+</header>
+<body>
+    <div class="container">
+    <div class="linha">
+        <div class="coluna-50">
+            <div class="elementosEsquerda">
+            <label class="digiteMensagem" for="texto">Digite uma mensagem para criptografar:</label>
+            <br>
+            <textarea type="text" id="texto" class="entraTexto"></textarea>
+            <br>
+            
+            <p class="exclamation">Atenção: Use apenas letras minúsculas e sem acentos!</p>
+                <button class="botoesEsquerda" onclick="criptografar()">Criptografar</button>
+                <button class="botoesEsquerda" onclick="descriptografar()">Descriptografar</button>
+            <br>
+            <br>
+            <br>
+            <label for="textoCriptografado" class="externoCriptografado">Aqui você pode colar as mensagens criptografadas externas:</label>
+            <br>
+            <textarea type="text" id="textoCriptografado" class="entraTextoExterno"></textarea>
+            <br>
+            <button class="botaoEsquerdaExterno" onclick="descriptografarTextoExterno()">Descriptografar Texto Externo</button>
+            <br>
+            </div>
+        </div>
+        <div class="coluna-50">
+            <div class="elementosDireita">
+            <label for="resultado" class="mostraResultado">Texto Criptografado:</label>
+            <br>
+            
+            <textarea type="text" id="resultado" class="entraResultado" readonly> A mensagem criptografada vai aparecer aqui. Digite um texto na caixa de mensagem.</textarea>
+            <br>
+            <button class="botoesDireita" onclick="copiarTexto()">Copiar</button>
+            <button class="botoesDireita" onclick="limparTudo()">Limpar</button>
+            <br>
+            <br>
+            <label for="resultadoTextoExterno" class="resultadoExternoCriptografado">Resultado do Texto Externo:</label>
+            <br>
+            <textarea type="text" id="resultadoTextoExterno" class="entraResultadoExterno" readonly>   O resultado da descriptografia do texto externo aparecerá aqui.</textarea>
+            <br>
+            <button class="botoesDireitaExterno" onclick="copiarTextoExterno()">Copiar</button>
+            <button class="botoesDireitaExterno" onclick="limparResultadoTextoExterno()">Limpar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function criptografar(){
+                        var texto = document.getElementById("texto").value;
+            var letras = texto.split("");
+            var novaLista = [];
+            for(var i=0; i<letras.length; i++){
+                if (letras[i] == "a"){
+                    novaLista.push("ai");
+                }
+                else if (letras[i] == "e") {
+                    novaLista.push("enter");
+                }
+                else if (letras[i] == "i") {
+                    novaLista.push("imes");   
+                }
+                else if (letras[i] == "o") {
+                    novaLista.push("ober");
+                }
+                else if (letras[i] == "u") {
+                    novaLista.push("ufat");
+                }
+                else {
+                    novaLista.push(letras[i]);
+                }
+            }
+            var novaFrase = novaLista.join("");
+            document.getElementById("resultado").value = novaFrase;
+        }
+        
+        function descriptografar(){
+            var texto = document.getElementById("resultado").value;
+            texto = texto.replace(/ai/g, "a");
+            texto = texto.replace(/enter/g, "e");
+            texto = texto.replace(/imes/g, "i");
+            texto = texto.replace(/ober/g, "o");
+            texto = texto.replace(/ufat/g, "u");
+            document.getElementById("resultado").value = texto;
+        }
+        
+        function copiarTexto() {
+            var textoCopiado = document.getElementById("resultado");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("O texto copiado é: " + textoCopiado.value);
+        }
+        
+        function limparTudo(){
+            document.getElementById("texto").value = "";
+            document.getElementById("resultado").value = "Nenhuma mensagem encontrada. Digite um texto.";
+        }
+        
+        function descriptografarTextoExterno(){
+            var textoExterno = document.getElementById("textoCriptografado").value;
+            var textoDescriptografado = textoExterno.replace(/ai/g, "a")
+                .replace(/enter/g, "e")
+                .replace(/imes/g, "i")
+                .replace(/ober/g, "o")
+                .replace(/ufat/g, "u");
+            document.getElementById("resultadoTextoExterno").value = textoDescriptografado;
+        }
+        
+        function copiarTextoExterno() {
+            var textoCopiado = document.getElementById("resultadoTextoExterno");
+            textoCopiado.select();
+            textoCopiado.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("O texto copiado é: " + textoCopiado.value);
+        }
+        
+        function limparResultadoTextoExterno() {
+            document.getElementById("textoCriptografado").value = "";
+            document.getElementById("resultadoTextoExterno").value = "O resultado da descriptografia do texto externo aparecerá aqui.";
+        }
+    </script>
+</body>
+<footer>
+    <div class="rodape">
+        <p>All rights reserved: Maria Helena Ostetto &copy;<br>
+O material disposto neste site é livre mediante créditos à autora.<br>Animated gif by giphy.com. Effects added using ezgif.com</p>
+    </div>
+</footer>
+</html>
